@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+:root{
+    --category-1:#f6c8b6;
+    --category-2:#87cefa;
+    --category-3:#c5d6ba;
+    --category-4:#ca9cac;
+}
+html{
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Mali', cursive;
+}
+body{
+    margin: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2017/05/09/13/33/laptop-2298286_1280.png');
+    background-size: cover;
+    background-position: 50% 60%;
+    background-attachment: fixed;
+    color: black;
+    overflow-y: hidden;
+}
+h1{
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.main-title{
+    text-align: center;
+    font-size: 3rem;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.drag-container{
+    margin: 20px;
+}
+.drag-list{
+    display: flex;
+    align-items: flex-start;
+}
+.drag-column{
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+    background-color: rgba(106, 90, 205,0.3);
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.header h1{
+    font-size: 1.5rem;
+}
+.backlog-column .header{
+    background-color: var(--category-1);
+}
+.progress-column .header{
+    background-color: var(--category-2);
+}
+.complete-column .header{
+    background-color: var(--category-3);
+}
+.reject-column .header{
+    background-color: var(--category-4);
+}
+.custom-scroll{
+    overflow-y: auto;
+    max-height: 52vh;
+}
+.drag-item-list{
+    min-height: 50px;
+}
+.drag-item{
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+    background-color: rgba(123, 104, 238, 0.9);
+    border-radius: 10px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
